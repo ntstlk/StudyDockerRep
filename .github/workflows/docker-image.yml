@@ -17,8 +17,8 @@ jobs:
     - name: Build the Docker image
  
       run: |
-        echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u "ntstlk" --password-stdin
-        docker build . --file Dockerfile --tag ntstlk/laba55:latest
-        docker push ntstlk/laba55:latest
+        echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u "trizzinter" --password-stdin
+        docker build . --file Dockerfile --tag trizzinter/laba55:latest
+        docker push trizzinter/laba55:latest
  
  
