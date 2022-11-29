@@ -18,7 +18,7 @@ jobs:
  
       run: |
         echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u "ntstlk" --password-stdin
-        docker build . --file Dockerfile --tag altfac/laba55:latest
+        docker build . --file Dockerfile --tag ntstlk/laba55:latest
         docker push altfac/laba55:latest
  
  
